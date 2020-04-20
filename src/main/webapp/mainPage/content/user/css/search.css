@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#search_box{
+    border: 1px solid red;
+    height: 15%;
+    width: 80%;
+    padding-left: 100px;
+    margin-top: 10px;
+}
+
+#show_box{
+    height: 80%;
+    border: 1px solid red;
+}
+
+.search_item{
+    display: inline;
+}
+
+#search_button{
+    margin-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 120px;
+    position: relative;
+    float: right;
+    font-size: 20px;
+}
+
+#clear_button{
+    margin-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    float: right;
+    font-size: 20px;
+}
+
+select{
+    width: 140px;
+    padding: 1px;
+    margin: 1px;
+    font-size: 15px;
+    color: #888888;
+}
+
+table{
+    margin-left: 100px;
+    text-align: center;
+}
+
+tr:hover{
+    background-color: #eeeeee;
+}
+td{
+    padding: 2px;
+}
+
+#delete_button{
+    border: none;
+    background-color: #eeeeee;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+#delete_button:hover{
+    cursor: pointer;
+}
+
+#edit_button{
+    border: none;
+    background-color: #eeeeee;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+#edit_button:hover{
+    cursor: pointer;
+}
+
+
+
+.add_info_left{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.add_info_right{
+    margin: 15px;
+    position: relative;
+    left: 350px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#tip{
+    position: absolute;
+    top: 173px;
+    font-size: 10px;
+}
+
+

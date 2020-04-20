@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    color: black;
+}
+
+#information_input_box{
+    position: relative;
+    left: 5%;
+    margin-left: 3%;
+    margin-top: 3%;
+    width: 80%;
+}
+
+.add_info_left{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.add_info_right{
+    margin: 15px;
+    position: relative;
+    left: 350px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#add_button{
+    font-size: 25px;
+    margin: 5px 100px 5px;
+    float: right;
+}
+
+input{
+    padding: 5px;
+    width: 300px;
+}
+
+select{
+    width: 150px;
+    padding: 1px;
+    margin: 1px;
+    font-size: 20px;
+}
