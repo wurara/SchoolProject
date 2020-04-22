@@ -4,7 +4,6 @@
 }
 
 #search_box{
-    border: 1px solid red;
     height: 15%;
     width: 80%;
     padding-left: 100px;
@@ -12,8 +11,7 @@
 }
 
 #show_box{
-    height: 80%;
-    border: 1px solid red;
+    height: 70%;
 }
 
 .search_item{

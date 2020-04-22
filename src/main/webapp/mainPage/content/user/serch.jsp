@@ -235,7 +235,7 @@
                     delete_button.setAttribute("id","delete_button");
                     delete_button.setAttribute("type","button");
                     delete_button.setAttribute("value","删除");
-                    delete_button.setAttribute("onclick","deleteInfo("+ jsonArray[i].ID+")");
+                    delete_button.setAttribute("onclick","deleteInfo(\""+ jsonArray[i].ID+"\")");
                     td08.appendChild(delete_button);
                     tr.appendChild(td08);
 

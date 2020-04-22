@@ -27,7 +27,6 @@
         </div>
         <div class="function_box" id="user_div" hidden="hidden">
             <a href="/mainPage/content/user/serch.jsp">人员查询</a>
-            <a href="/mainPage/content/user/change.jsp">人员变动</a>
             <a href="/mainPage/content/user/add.jsp">人员新增</a>
         </div>
         <div class="function_box" id="sell_bill_div" hidden="hidden">

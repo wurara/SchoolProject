@@ -36,7 +36,6 @@ public class MapListHandler implements Handler {
                 for (int i = 1; i <= metaData.getColumnCount(); i++) {
                     map.put(metaData.getColumnLabel(i),
                             result.getObject(metaData.getColumnLabel(i)) == null ? "" : result.getObject(metaData.getColumnLabel(i)).toString());
-                    System.out.println();
                 }
                 resultList.add(map);
             }
