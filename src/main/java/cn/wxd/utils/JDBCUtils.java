@@ -4,8 +4,6 @@ import cn.wxd.DAO.BaseDAO;
 import cn.wxd.DAO.handler.MapListHandler;
 import cn.wxd.entity.MainVO;
 
-import javax.swing.*;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.*;
@@ -82,18 +80,23 @@ public class JDBCUtils {
      * @return
      */
     public static String saveVO(MainVO tempVO){
+        //类对象
         Class classObject = null ;
         try{
+            //新建对应的实体类
             classObject = Class.forName(tempVO.getClassName());
-            classObject.cast(tempVO);
         }catch (Exception e){
         }
+        //新建sql语句
         StringBuffer sql = new StringBuffer();
         sql.append("INSERT INTO ");
+        //VO中存储了该VO对应的数据库表名
         sql.append(tempVO.getTable()+"(");
         //获得所有的get方法
         Method[] tempMethods = classObject.getMethods();
+        //所有的get方法
         List<Method> getMethods = new ArrayList<>();
+        //所有的set方法
         List<Method> setMethods = new ArrayList<>();
         for(Method method:tempMethods){
             if(method.getName().contains("get")){
@@ -134,9 +137,12 @@ public class JDBCUtils {
                 }
             }
         }
+        //清除最后一个逗号
         sql.delete(sql.length()-1,sql.length());
         sql.append(")");
+        //执行数据库更新语句
         List<Map<String,String>> deptInfo =  (List<Map<String,String>>) new BaseDAO().executeQuarry(sql.toString(),new MapListHandler());
+        //将返回的第一个数据作为返回信息
         return deptInfo.get(0).get("info");
 }
 }
