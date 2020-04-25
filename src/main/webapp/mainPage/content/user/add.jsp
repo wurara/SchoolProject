@@ -50,8 +50,15 @@
             <option value="博士后">博士后</option>
         </select>
     </div>
+
     <br>
     <div class="add_info_left"><span>身份证：</span><input  id="user_info_id" type="text" required="required"></div>
+    <div class="add_info_right" id="user_info_psntype"><span>类别：&nbsp</span>
+        <select id="psntype_select">
+            <option value="01">用户</option>
+            <option value="02">客户</option>
+        </select>
+    </div>
     <br>
     <div class="add_info"><input type="button" value="确认新增" id="add_button"></div>
 </div>
@@ -105,6 +112,7 @@
     }
 
     document.getElementById("add_button").onclick = function (ev) {
+        //传入后台的数据
         var json = {
             "NAME": document.getElementById("user_info_name").value,
             "BIRDAY": document.getElementById("user_info_birday").value,
@@ -115,10 +123,11 @@
             "JOB": document.getElementById("job_select").value,
             "PHONE": document.getElementById("user_info_phone").value,
             "SEX": document.getElementById("sex_select").value,
-            "SCHOOL": document.getElementById("user_info_school").value
+            "SCHOOL": document.getElementById("user_info_school").value,
+            "PSNTYPE" :document.getElementById("psntype_select").value,
         }
         if(json.NAME==""){
-            alert("请输入名称");
+            alert("请输入姓名");
         }else if(json.ID==""){
             alert("请输入身份证");
         } else if(json.PHONE==""){
@@ -133,7 +142,14 @@
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {   //解析返回的json
                     if(xmlhttp.responseText=="truetrue"){
-                        alert("添加成功");
+                        alert("用户添加成功");
+                        document.getElementById("user_info_name").value = "";
+                        document.getElementById("user_info_birday").value = "";
+                        document.getElementById("user_info_id").value = "";
+                        document.getElementById("user_info_phone").value = "";
+                        document.getElementById("user_info_school").value = "";
+                    }else if(xmlhttp.responseText=="true"){
+                        alert("客户添加成功");
                         document.getElementById("user_info_name").value = "";
                         document.getElementById("user_info_birday").value = "";
                         document.getElementById("user_info_id").value = "";

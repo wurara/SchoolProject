@@ -15,6 +15,15 @@ public class PsndocVO extends MainVO {
     String SEX;
     String JOB_CODE;
     String SCHOOL;
+    String PSNTYPE;
+
+    public String getPSNTYPE() {
+        return PSNTYPE;
+    }
+
+    public void setPSNTYPE(String PSNTYPE) {
+        this.PSNTYPE = PSNTYPE;
+    }
 
     public String getPK_PSNDOC() {
         return PK_PSNDOC;

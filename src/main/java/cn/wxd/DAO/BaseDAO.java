@@ -25,7 +25,7 @@ public class BaseDAO {
         } catch (SQLException e) {
             List<Map<String, String>> result = new ArrayList<>();
             Map map = new HashMap();
-            map.put("Error", e.getMessage());
+            map.put("info", e.getMessage());
             result.add(map);
             return result;
         }

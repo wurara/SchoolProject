@@ -57,6 +57,12 @@
         <br>
         <div class="search_item"><span>创建人：</span><input id="user_info_creator" type="text"></div>
         <div class="search_item"><span>创建时间：</span><input id="user_info_creationtime" type="date"></div>
+        <div class="search_item" id="user_info_psntype"><span> 人员类别：</span>
+            <select id="psntype_select">
+                <option value="01">用户</option>
+                <option value="02">客户</option>
+            </select>
+        </div>
         <div class="search_button"><span id="tip">双击数据可修改数据，输入框失去焦点提交修改</span></div>
         <div class="search_button"><input type="button" value="查询" id="search_button"></div>
         <div class="search_button"><input type="button" value="清空" id="clear_button"></div>
@@ -157,7 +163,8 @@
             "SEX": document.getElementById("sex_select").value,
             "SCHOOL": document.getElementById("user_info_school").value,
             "CREATOR": document.getElementById("user_info_creator").value,
-            "CREATIONTIME": document.getElementById("user_info_creationtime").value
+            "CREATIONTIME": document.getElementById("user_info_creationtime").value,
+            "PSNTYPE":document.getElementById("psntype_select").value
         }
         xmlhttp.open("GET", "/psndoc_search?json=" + JSON.stringify(json), true);
         xmlhttp.send();

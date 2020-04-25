@@ -62,6 +62,15 @@ public class Search extends HttpServlet {
                 sql.append(" AND BD_PSNDOC.BIRTHDATE='" + json.get("BIRDAY") + "'");
             }
         }
+        if (!json.get("PSNTYPE").toString().isEmpty()) {
+            if (flag == 0) {
+                sql.append(" WHERE");
+                sql.append(" BD_PSNDOC.PSNTYPE='" + json.get("PSNTYPE") + "'");
+                flag = 1;
+            }else {
+                sql.append(" AND BD_PSNDOC.PSNTYPE='" + json.get("PSNTYPE") + "'");
+            }
+        }
         if (!json.get("BLOOD").toString().isEmpty()) {
             if (flag == 0) {
                 sql.append(" WHERE");

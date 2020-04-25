@@ -40,16 +40,19 @@ public class AddPsndoc extends HttpServlet {
         VO.setJOB_CODE((String)json.get("JOB"));
         VO.setPK_PSNDOC("ry"+json.get("ID"));
         VO.setCREATOR(GlobleUtils.getCreatorCode(req));
+        VO.setPSNTYPE((String)json.get("PSNTYPE"));
         String result = JDBCUtils.saveVO(VO);
-        UserVO userVO = new UserVO();
-        userVO.setCUSERID("yh"+json.get("ID"));
-        userVO.setDISABLEDATE(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
-        userVO.setPK_PSNDOC("ry"+json.get("ID"));
-        userVO.setUSER_CODE((String)json.get("PHONE"));
-        userVO.setUSER_NAME((String)json.get("NAME"));
-        userVO.setUSER_PASSWORD("123456");
-        userVO.setCREATOR(GlobleUtils.getCreatorCode(req));
-        result = result+ JDBCUtils.saveVO(userVO);
+        if(json.get("PSNTYPE").equals("01")){
+            UserVO userVO = new UserVO();
+            userVO.setCUSERID("yh"+json.get("ID"));
+            userVO.setDISABLEDATE(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+            userVO.setPK_PSNDOC("ry"+json.get("ID"));
+            userVO.setUSER_CODE((String)json.get("PHONE"));
+            userVO.setUSER_NAME((String)json.get("NAME"));
+            userVO.setUSER_PASSWORD("123456");
+            userVO.setCREATOR(GlobleUtils.getCreatorCode(req));
+            result = result+ JDBCUtils.saveVO(userVO);
+        }
         resp.getWriter().write(result);
 
     }
