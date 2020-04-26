@@ -10,3 +10,7 @@ jquery设置一个监控一个节点</p>
             document.getElementById("tip").innerText = "双击数据可修改数据，输入框失去焦点提交修改";
         }, 1000);
     });`
+
+<p>jquery ui 设置自动补全</p>
+
+`https://www.runoob.com/jqueryui/api-autocomplete.html#option-source`
