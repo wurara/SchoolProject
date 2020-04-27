@@ -1,10 +1,14 @@
 package cn.wxd.utils;
 
+import cn.wxd.DAO.BaseDAO;
+import cn.wxd.DAO.handler.StringHandler;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwt;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 
 public class GlobleUtils {
@@ -37,5 +41,15 @@ public class GlobleUtils {
             }
         }
         return USER_NAME;
+    }
+
+    public static String getTableCount(HttpServletRequest req){
+        String name = req.getParameter("name");
+        StringBuffer sql = new StringBuffer();
+
+        sql.append(" select \"COUNT\"(*) num from "+name);
+        sql.append(" where CreationDate = '"+new SimpleDateFormat("yyyy-MM-dd").format(new Date())+"'");
+        String num = (String) new BaseDAO().executeQuarry(sql.toString(),new StringHandler());
+        return  num;
     }
 }

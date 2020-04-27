@@ -15,6 +15,7 @@ li{
 input{
     padding: 2px;
     width: 200px;
+    margin: 2px;
 }
 
 .ui-helper-hidden-accessible {display:none;}
@@ -25,4 +26,43 @@ input{
 
 .sell_bill_foot_item{
     display: inline-block;
+}
+
+#sell_bill_div_info{
+    height: 15%;
+    width: 80%;
+    padding-left: 100px;
+    margin-top: 10px;
+}
+
+table{
+    margin-top: 5px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+tr:hover{
+    background-color: #eeeeee;
+}
+td{
+    padding: 2px;
+}
+
+#sell_bill_foot_items{
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+
+
+#commit_button{
+    position: absolute;
+    right: 305px;
+}
+
+#sell_bill_info_creationtime_div{
+    margin-left: 100px;
+}
+#sell_bill_info_billid_div{
+    margin-left: 50px;
 }

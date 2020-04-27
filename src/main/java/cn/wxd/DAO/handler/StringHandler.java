@@ -11,7 +11,7 @@ public class StringHandler implements Handler {
         try {
             ResultSetMetaData metaData = result.getMetaData();
             result.next();
-            string = (String) result.getObject(metaData.getColumnLabel(1));
+            string = String.valueOf(result.getObject(metaData.getColumnLabel(1)));
         } catch (SQLException e) {
             e.printStackTrace();
             string =e.getMessage();

@@ -1,4 +1,4 @@
-package cn.wxd.services.sell;
+package cn.wxd.services.sell.add;
 
 import cn.wxd.DAO.BaseDAO;
 import cn.wxd.DAO.handler.MapListHandler;

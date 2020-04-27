@@ -63,7 +63,7 @@
                 <option value="02">客户</option>
             </select>
         </div>
-        <div class="search_button"><span id="tip">双击数据可修改数据，输入框失去焦点提交修改</span></div>
+        <div class="search_button"><span id="tip">双击数据可修改数据，点击其他地方提交修改</span></div>
         <div class="search_button"><input type="button" value="查询" id="search_button"></div>
         <div class="search_button"><input type="button" value="清空" id="clear_button"></div>
     </div>
