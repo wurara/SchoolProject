@@ -400,7 +400,6 @@
         var deptname = document.getElementById("info_change_input_box").parentElement.parentElement.getAttribute("info");
         var name =document.getElementById("info_change_input_box").parentElement.getAttribute("name");
         var old = document.getElementById("info_change_input_box").getAttribute("oldText");
-        console.log(document.getElementById("info_change_input_box").parentElement.parentElement)
         var psndocID = document.getElementById("info_change_input_box").parentElement.parentElement.getAttribute("id");
         //如果是部门则只改变显示的值，还需要将职位选择后才能存入数据库
         if(name=="DEPTNAME"){

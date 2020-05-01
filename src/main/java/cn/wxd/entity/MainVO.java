@@ -25,4 +25,8 @@ public abstract class MainVO implements BaseVO{
         this.CREATIONTIME = CREATIONTIME;
     }
 
+    @Override
+    public String getClassName() {
+        return this.getClass().getName();
+    }
 }

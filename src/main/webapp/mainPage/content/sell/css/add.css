@@ -22,6 +22,7 @@ input{
 
 .sell_bill_head_item{
     display: inline-block;
+    margin-left: 10px;
 }
 
 .sell_bill_foot_item{
@@ -31,13 +32,12 @@ input{
 #sell_bill_div_info{
     height: 15%;
     width: 80%;
-    padding-left: 100px;
+    padding-left: 200px;
     margin-top: 10px;
 }
 
 table{
     margin-top: 5px;
-    margin-left: 100px;
     text-align: center;
 }
 
@@ -45,24 +45,23 @@ tr:hover{
     background-color: #eeeeee;
 }
 td{
-    padding: 2px;
+    height: 30px;
+    width: 300px;
 }
-
-#sell_bill_foot_items{
-    position: absolute;
-    bottom: 50px;
-    right: 100px;
-}
-
 
 #commit_button{
-    position: absolute;
-    right: 305px;
+    float: right;
+    margin-right: 45px;
 }
 
 #sell_bill_info_creationtime_div{
-    margin-left: 100px;
+    margin-left: 50px;
 }
 #sell_bill_info_billid_div{
     margin-left: 50px;
+}
+#sell_bill_foot_items{
+    position: absolute;
+    right: 200px;
+    bottom: 100px;
 }

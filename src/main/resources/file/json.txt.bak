@@ -28,4 +28,108 @@
     "CREATIONTIME" : "2020-04-15"
 }
 //人员查询后台提交给前台的数据
-[{"SCHOOL":"asd","DEPTNAME":"总部","CREATOR":"吴小东","EDU":"大专","PHONE":"dwqd","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-22","BIRTHDATE":"2020-04-17","ID":"wqdqdsad","NAME":"ewdas","JOB_NAME":"管理员"},{"SCHOOL":"东华理工大学","DEPTNAME":"总部","CREATOR":"吴小东","EDU":"本科","PHONE":"wurara","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-08","ID":"36232219980708871x","NAME":"吴小东","JOB_NAME":"管理员"},{"SCHOOL":"南昌航空大学","DEPTNAME":"总部","CREATOR":"吴小东","EDU":"大专","PHONE":"1234567","SEX":"男","BLOODTYPE":"B","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-15","ID":"365214521452544125","NAME":"张哲一","JOB_NAME":"管理员"},{"SCHOOL":"4212eqwe21","DEPTNAME":"总部","CREATOR":"吴小东","EDU":"大专","PHONE":"321421421421","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-22","BIRTHDATE":"2020-04-17","ID":"ewqe21e21321e21ew","NAME":"123312","JOB_NAME":"管理员"},{"SCHOOL":"43214","DEPTNAME":"开发部","CREATOR":"吴小东","EDU":"大专","PHONE":"123523","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-03","ID":"231532423","NAME":"李一一","JOB_NAME":"工程师"},{"SCHOOL":"23141222222222","DEPTNAME":"销售部","CREATOR":"吴小东","EDU":"大专","PHONE":"1234123","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-03","ID":"324213423","NAME":"4321532432","JOB_NAME":"业务员"},{"SCHOOL":"23153214","DEPTNAME":"销售部","CREATOR":"吴小东","EDU":"大专","PHONE":"32124","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-11","ID":"2314213423","NAME":"12342314","JOB_NAME":"业务员"},{"SCHOOL":"31242","DEPTNAME":"销售部","CREATOR":"吴小东","EDU":"大专","PHONE":"143214","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-10","ID":"342314231432","NAME":"321432","JOB_NAME":"业务员"},{"SCHOOL":"321","DEPTNAME":"销售部","CREATOR":"吴小东","EDU":"大专","PHONE":"321","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-22","BIRTHDATE":"2020-04-03","ID":"2421432","NAME":"123","JOB_NAME":"业务员"},{"SCHOOL":"312432","DEPTNAME":"销售部","CREATOR":"吴小东","EDU":"大专","PHONE":"14324","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-24","ID":"15315315","NAME":"435243543","JOB_NAME":"业务员"},{"SCHOOL":"5123432","DEPTNAME":"销售部","CREATOR":"吴小东","EDU":"大专","PHONE":"12343214","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-18","ID":"3251234","NAME":"435423543","JOB_NAME":"业务员"},{"SCHOOL":"213432","DEPTNAME":"销售部","CREATOR":"吴小东","EDU":"大专","PHONE":"4321432","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-03","ID":"5132423","NAME":"2315231","JOB_NAME":"业务员"},{"SCHOOL":"523452345","DEPTNAME":"财务部","CREATOR":"吴小东","EDU":"大专","PHONE":"123456","SEX":"女","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-10","ID":"254235435","NAME":"321214124","JOB_NAME":"总监"},{"SCHOOL":"123","DEPTNAME":"财务部","CREATOR":"吴小东","EDU":"大专","PHONE":"123","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-15","ID":"123","NAME":"123","JOB_NAME":"业务员"},{"SCHOOL":"32","DEPTNAME":"财务部","CREATOR":"吴小东","EDU":"大专","PHONE":"4231412","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-11","ID":"5325213423","NAME":"1234231","JOB_NAME":"业务员"},{"SCHOOL":"432153434","DEPTNAME":"财务部","CREATOR":"吴小东","EDU":"大专","PHONE":"4321423142","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-17","ID":"324231423421","NAME":"412341234","JOB_NAME":"业务员"},{"SCHOOL":"2314231","DEPTNAME":"财务部","CREATOR":"吴小东","EDU":"大专","PHONE":"4324123","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"14234-04-16","ID":"423412","NAME":"432142314","JOB_NAME":"业务员"},{"SCHOOL":"124123432","DEPTNAME":"财务部","CREATOR":"吴小东","EDU":"大专","PHONE":"43241234","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"0004-04-12","ID":"31424234","NAME":"134231","JOB_NAME":"业务员"},{"SCHOOL":"124324","DEPTNAME":"财务部","CREATOR":"吴小东","EDU":"大专","PHONE":"23141234","SEX":"男","BLOODTYPE":"A","CREATIONTIME":"2020-04-15","BIRTHDATE":"2020-04-15","ID":"432423412","NAME":"42341234","JOB_NAME":"业务员"},{"info":"true"}]
+[
+    {
+        "SCHOOL" : "南昌航空大学",
+        "CREATOR" : "",
+        "EDU" : "大专",
+        "PHONE" : "18117455214",
+        "SEX" : "男",
+        "BLOODTYPE" : "A",
+        "CREATIONTIME" : "2020-04-10",
+        "BIRTHDATE" : "2020-04-01",
+        "ID" : "362322514585477854",
+        "NAME" : "张哲一",
+        "JOB_NAME" : "管理员"
+    },
+    {
+        "SCHOOL" : "东华理工大学",
+        "CREATOR" : "",
+        "EDU" : "大专",
+        "PHONE" : "18170888452",
+        "SEX" : "男",
+        "BLOODTYPE" : "A",
+        "CREATIONTIME" : "2020-04-10",
+        "BIRTHDATE" : "2020-04-09",
+        "ID" : "325422512563254125",
+        "NAME" : "张哲一",
+        "JOB_NAME" : "管理员"
+    },
+    {
+        "SCHOOL" : "421",
+        "CREATOR" : "吴小东",
+        "EDU" : "大专",
+        "PHONE" : "321",
+        "SEX" : "男",
+        "BLOODTYPE" : "A",
+        "CREATIONTIME" : "2020-04-08",
+        "BIRTHDATE" : "",
+        "ID" : "123",
+        "NAME" : "321",
+        "JOB_NAME" : "管理员"
+    },
+    {
+        "SCHOOL" : "",
+        "CREATOR" : "",
+        "EDU" : "",
+        "PHONE" : "",
+        "SEX" : "",
+        "BLOODTYPE" : "",
+        "CREATIONTIME" : "",
+        "BIRTHDATE" : "",
+        "ID" : "",
+        "NAME" : "",
+        "JOB_NAME" : "管理员"
+    },
+    {
+        "info" : "true"
+    }
+]
+
+
+//销售清单前台传后台数据
+[
+    {
+        "CUSTOMER" : "",
+        "CUSTOMER_PHONE" : "",
+        "MONEY" : "",
+        "CREATIONDATE" : "2020-4-28",
+        "BILL_MAKER" : "吴小东",
+        "PK_SALE_HEAD" : "xs202004280001"
+    },
+    [
+        {
+            "PK_SALE_BODY" : "xs2020042800010001",
+            "PK_SALE_HEAD" : "xs202004280001",
+            "MATERIAL_NAME" : "1",
+            "NUMBER" : "2",
+            "UNIT" : "3",
+            "PRICE" : "4",
+            "NOTE" : "5",
+            "MONEY" : 8
+        },
+        {
+            "PK_SALE_BODY" : "xs2020042800010002",
+            "PK_SALE_HEAD" : "xs202004280001",
+            "MATERIAL_NAME" : "6",
+            "NUMBER" : "7",
+            "UNIT" : "8",
+            "PRICE" : "9",
+            "NOTE" : "",
+            "MONEY" : 63
+        },
+        {
+            "PK_SALE_BODY" : "xs2020042800010003",
+            "PK_SALE_HEAD" : "xs202004280001",
+            "MATERIAL_NAME" : "",
+            "NUMBER" : "",
+            "UNIT" : "",
+            "PRICE" : "",
+            "NOTE" : "",
+            "MONEY" : 0
+        }
+    ]
+]
+
+
+{"CUSTOMER":"","CUSTOMER_PHONE":"","MONEY":"11500","CREATIONDATE":"2020-4-30","BILL_MAKER":"吴小东","PK_SALE_HEAD":"xs202004300001"},[{"PK_SALE_BODY":"xs2020043000010001","PK_SALE_HEAD":"xs202004300001","MATERIAL_NAME":"土豆","NUMBER":"1","UNIT":"吨","PRICE":"1000","NOTE":"","MONEY":1000},{"PK_SALE_BODY":"xs2020043000010002","PK_SALE_HEAD":"xs202004300001","MATERIAL_NAME":"马铃薯","NUMBER":"2","UNIT":"吨","PRICE":"3000","NOTE":"","MONEY":6000},{"PK_SALE_BODY":"xs2020043000010003","PK_SALE_HEAD":"xs202004300001","MATERIAL_NAME":"洋芋","NUMBER":"3","UNIT":"吨","PRICE":"1500","NOTE":"","MONEY":4500}]

@@ -85,3 +85,93 @@
         "info" : "true"
     }
 ]
+
+
+//销售清单前台传后台数据
+[
+    {
+        "CUSTOMER" : "",
+        "CUSTOMER_PHONE" : "",
+        "MONEY" : "",
+        "CREATIONDATE" : "2020-4-28",
+        "BILL_MAKER" : "吴小东",
+        "PK_SALE_HEAD" : "xs202004280001"
+    },
+    [
+        {
+            "PK_SALE_BODY" : "xs2020042800010001",
+            "PK_SALE_HEAD" : "xs202004280001",
+            "MATERIAL_NAME" : "1",
+            "NUMBER" : "2",
+            "UNIT" : "3",
+            "PRICE" : "4",
+            "NOTE" : "5",
+            "MONEY" : 8
+        },
+        {
+            "PK_SALE_BODY" : "xs2020042800010002",
+            "PK_SALE_HEAD" : "xs202004280001",
+            "MATERIAL_NAME" : "6",
+            "NUMBER" : "7",
+            "UNIT" : "8",
+            "PRICE" : "9",
+            "NOTE" : "",
+            "MONEY" : 63
+        },
+        {
+            "PK_SALE_BODY" : "xs2020042800010003",
+            "PK_SALE_HEAD" : "xs202004280001",
+            "MATERIAL_NAME" : "",
+            "NUMBER" : "",
+            "UNIT" : "",
+            "PRICE" : "",
+            "NOTE" : "",
+            "MONEY" : 0
+        }
+    ]
+]
+
+
+Microsoft (R) Windows Script Host Version 5.812
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+{
+    "CUSTOMER" : "",
+    "CUSTOMER_PHONE" : "",
+    "MONEY" : "11500",
+    "CREATIONDATE" : "2020-4-30",
+    "BILL_MAKER" : "吴小东",
+    "PK_SALE_HEAD" : "xs202004300001"
+},
+[
+    {
+        "PK_SALE_BODY" : "xs2020043000010001",
+        "PK_SALE_HEAD" : "xs202004300001",
+        "MATERIAL_NAME" : "土豆",
+        "NUMBER" : "1",
+        "UNIT" : "吨",
+        "PRICE" : "1000",
+        "NOTE" : "",
+        "MONEY" : 1000
+    },
+    {
+        "PK_SALE_BODY" : "xs2020043000010002",
+        "PK_SALE_HEAD" : "xs202004300001",
+        "MATERIAL_NAME" : "马铃薯",
+        "NUMBER" : "2",
+        "UNIT" : "吨",
+        "PRICE" : "3000",
+        "NOTE" : "",
+        "MONEY" : 6000
+    },
+    {
+        "PK_SALE_BODY" : "xs2020043000010003",
+        "PK_SALE_HEAD" : "xs202004300001",
+        "MATERIAL_NAME" : "洋芋",
+        "NUMBER" : "3",
+        "UNIT" : "吨",
+        "PRICE" : "1500",
+        "NOTE" : "",
+        "MONEY" : 4500
+    }
+]

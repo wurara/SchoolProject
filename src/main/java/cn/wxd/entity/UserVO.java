@@ -82,8 +82,4 @@ public class UserVO extends MainVO{
         return "SM_USER";
     }
 
-    @Override
-    public String getClassName() {
-        return "cn.wxd.entity.UserVO";
-    }
 }

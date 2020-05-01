@@ -144,8 +144,4 @@ public class PsndocVO extends MainVO {
         return "BD_PSNDOC";
     }
 
-    @Override
-    public String getClassName() {
-        return "cn.wxd.entity.PsndocVO";
-    }
 }

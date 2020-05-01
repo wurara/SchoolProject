@@ -11,6 +11,7 @@
     <title>之正管理</title>
     <link rel="stylesheet" href="/mainPage/head/head.css" type="text/css"/>
     <script src="/./js/jquery-3.3.1.min.js"></script>
+    <script src="/././js/tool.js"></script>
 </head>
 <body>
 <div id="body">
@@ -103,17 +104,6 @@
 
 
     document.getElementById("user_info").innerText = decodeURIComponent(getCookie("user_job"))+":"+decodeURIComponent(getCookie("user_name"));
-    function getCookie(cookieName) {
-        var strCookie = document.cookie;
-        var arrCookie = strCookie.split("; ");
-        for(var i = 0; i < arrCookie.length; i++){
-            var arr = arrCookie[i].split("=");
-            if(cookieName == arr[0]){
-                return arr[1];
-            }
-        }
-        return "";
-    }
 </script>
 
 </body>

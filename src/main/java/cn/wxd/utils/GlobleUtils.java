@@ -47,9 +47,9 @@ public class GlobleUtils {
         String name = req.getParameter("name");
         StringBuffer sql = new StringBuffer();
 
-        sql.append(" select \"COUNT\"(*) num from "+name);
-        sql.append(" where CreationDate = '"+new SimpleDateFormat("yyyy-MM-dd").format(new Date())+"'");
-        String num = (String) new BaseDAO().executeQuarry(sql.toString(),new StringHandler());
+        sql.append(" select \"MAX\"(ROWCOUNT)  num from "+name);
+        sql.append(" where CreationTime = '"+new SimpleDateFormat("yyyy-MM-dd").format(new Date())+"'");
+        String num = String.valueOf(new BaseDAO().executeQuarry(sql.toString(),new StringHandler()));
         return  num;
     }
 }

@@ -52,13 +52,11 @@ public class Update extends HttpServlet {
             sql.append(" SET USER_CODE='"+info+"'");
             sql.append(" WHERE CUSERID='yh"+ID+"'");
              flag = new BaseDAO().executeUpdate(sql.toString());
-        }else {
-            if(flag.equals("1")){
+        }
+        if(flag.equals("1")){
                 resp.getWriter().write("success");
             }else {
                 resp.getWriter().write(flag);
             }
         }
-
-    }
 }
