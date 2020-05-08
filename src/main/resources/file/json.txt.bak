@@ -132,4 +132,48 @@
 ]
 
 
-{"CUSTOMER":"","CUSTOMER_PHONE":"","MONEY":"11500","CREATIONDATE":"2020-4-30","BILL_MAKER":"吴小东","PK_SALE_HEAD":"xs202004300001"},[{"PK_SALE_BODY":"xs2020043000010001","PK_SALE_HEAD":"xs202004300001","MATERIAL_NAME":"土豆","NUMBER":"1","UNIT":"吨","PRICE":"1000","NOTE":"","MONEY":1000},{"PK_SALE_BODY":"xs2020043000010002","PK_SALE_HEAD":"xs202004300001","MATERIAL_NAME":"马铃薯","NUMBER":"2","UNIT":"吨","PRICE":"3000","NOTE":"","MONEY":6000},{"PK_SALE_BODY":"xs2020043000010003","PK_SALE_HEAD":"xs202004300001","MATERIAL_NAME":"洋芋","NUMBER":"3","UNIT":"吨","PRICE":"1500","NOTE":"","MONEY":4500}]
+
+//销售单新增前台传后台数据
+{
+    "CUSTOMER" : "",
+    "CUSTOMER_PHONE" : "",
+    "MONEY" : "11500",
+    "CREATIONDATE" : "2020-4-30",
+    "BILL_MAKER" : "吴小东",
+    "PK_SALE_HEAD" : "xs202004300001"
+},
+[
+    {
+        "PK_SALE_BODY" : "xs2020043000010001",
+        "PK_SALE_HEAD" : "xs202004300001",
+        "MATERIAL_NAME" : "土豆",
+        "NUMBER" : "1",
+        "UNIT" : "吨",
+        "PRICE" : "1000",
+        "NOTE" : "",
+        "MONEY" : 1000
+    },
+    {
+        "PK_SALE_BODY" : "xs2020043000010002",
+        "PK_SALE_HEAD" : "xs202004300001",
+        "MATERIAL_NAME" : "马铃薯",
+        "NUMBER" : "2",
+        "UNIT" : "吨",
+        "PRICE" : "3000",
+        "NOTE" : "",
+        "MONEY" : 6000
+    },
+    {
+        "PK_SALE_BODY" : "xs2020043000010003",
+        "PK_SALE_HEAD" : "xs202004300001",
+        "MATERIAL_NAME" : "洋芋",
+        "NUMBER" : "3",
+        "UNIT" : "吨",
+        "PRICE" : "1500",
+        "NOTE" : "",
+        "MONEY" : 4500
+    }
+]
+
+//单据详情后台传前台数据
+{"PK_SALE_HEAD":"xs202005010001","BILL_CHECKER":"","MONEY":"9500","ROWCOUNT":"1","CUSTOMER_PHONE":"13520122353","BILL_CHECK_DATE":"","AFTER_BILL_TYPE":"","body":[{"DETAIL_NUM":"2","PK_SALE_HEAD":"xs202005010001","MONEY":"4000","ROWCOUNT":"","DEF1":"","UNIT":"吨","PRICE":"2000","PK_SALE_BODY":"xs2020050100010002","NOTE":"","CREATIONTIME":"2020-05-01","MATERIAL_NAME":"马铃薯","DR":"0"},{"DETAIL_NUM":"1","PK_SALE_HEAD":"xs202005010001","MONEY":"1000","ROWCOUNT":"","DEF1":"","UNIT":"吨","PRICE":"1000","PK_SALE_BODY":"xs2020050100010001","NOTE":"","CREATIONTIME":"2020-05-01","MATERIAL_NAME":"土豆","DR":"0"},{"DETAIL_NUM":"3","PK_SALE_HEAD":"xs202005010001","MONEY":"4500","ROWCOUNT":"","DEF1":"","UNIT":"吨","PRICE":"1500","PK_SALE_BODY":"xs2020050100010003","NOTE":"","CREATIONTIME":"2020-05-01","MATERIAL_NAME":"洋芋","DR":"0"}],"DR":"0","BILL_MAKER":"吴小东","ADDRESS":"三阳大道","CUSTOMER":"嵇康","CREATIONTIME":"2020-05-01","PK_AFTER":""}

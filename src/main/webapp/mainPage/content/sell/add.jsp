@@ -108,12 +108,9 @@
             })
         }
     });
-    //选择用户后自动失去焦点
-    $( "#sell_bill_info_customer" ).on( "autocompleteselect", function( event, ui ) {
-        $( "#sell_bill_info_customer" ).blur()
-    } );
     //设置自动填写电话
     $("#sell_bill_info_customer").on("blur", function (event, ui) {
+        console.log(1)
         xmlhttp.open("GET", "/AutoCustomerPhoneComplete?name=" + document.getElementById("sell_bill_info_customer").value, true);
         xmlhttp.send();
         xmlhttp.onreadystatechange = function () {

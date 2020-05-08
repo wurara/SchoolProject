@@ -43,6 +43,11 @@ public class GlobleUtils {
         return USER_NAME;
     }
 
+    /**
+     * 传入表名后查询行数量
+     * @param req
+     * @return
+     */
     public static String getTableCount(HttpServletRequest req){
         String name = req.getParameter("name");
         StringBuffer sql = new StringBuffer();
@@ -50,6 +55,26 @@ public class GlobleUtils {
         sql.append(" select \"MAX\"(ROWCOUNT)  num from "+name);
         sql.append(" where CreationTime = '"+new SimpleDateFormat("yyyy-MM-dd").format(new Date())+"'");
         String num = String.valueOf(new BaseDAO().executeQuarry(sql.toString(),new StringHandler()));
-        return  num;
+        return  num=="null"?"0":num;
+    }
+
+    /**
+     *      传入表名后查询行数量
+     * @param name
+     * @return
+     */
+    public static String getTableCount(String name){
+        StringBuffer sql = new StringBuffer();
+
+        sql.append(" select \"MAX\"(ROWCOUNT)  num from "+name);
+        sql.append(" where CreationTime = '"+new SimpleDateFormat("yyyy-MM-dd").format(new Date())+"'");
+        String num = String.valueOf(new BaseDAO().executeQuarry(sql.toString(),new StringHandler()));
+        return  num=="null"?"0":num;
+    }
+
+    public static  String getBillPK(String head,String table_name){
+        int rowCount = Integer.parseInt(GlobleUtils.getTableCount(table_name))+1;
+        String pkBillHead = head+new SimpleDateFormat("YYYYMMdd").format(new Date())+ ("0000"+(Integer.valueOf(rowCount)+1)).substring(("0000"+(Integer.valueOf(rowCount)+1)).length()-4,("0000"+(Integer.valueOf(rowCount)+1)).length());
+        return pkBillHead;
     }
 }
