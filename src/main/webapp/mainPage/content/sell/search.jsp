@@ -31,6 +31,7 @@
     <div id="sell_bill_detail_items">
         <table id="sell_bill_detail_items_table" frame="border" rules="all" cellpadding="50" width="80%">
             <tr class="sell_bill_detail_items_table_tr" >
+                <td class="sell_bill_detail_items_table_td">单据号</td>
                 <td class="sell_bill_detail_items_table_td">客户名</td>
                 <td class="sell_bill_detail_items_table_td">客户电话</td>
                 <td class="sell_bill_detail_items_table_td">总金额</td>
@@ -50,6 +51,10 @@
     else {// code for IE6, IE5
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
+    window.onload = function (ev) {
+        document.getElementById("sell_bill_info_search").click();
+    }
+    //查询按钮点击
     document.getElementById("sell_bill_info_search").onclick =function (ev) {
         var json = {
             "CUSTOMER": document.getElementById("sell_bill_info_customer").value,
@@ -64,13 +69,18 @@
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 var jsonarray = JSON.parse(xmlhttp.responseText);
-                document.getElementById("sell_bill_detail_items_table").innerHTML = "<tr class=\"sell_bill_detail_items_table_tr\" ><td class=\"sell_bill_detail_items_table_td\">客户名</td><td class=\"sell_bill_detail_items_table_td\">客户电话</td><td class=\"sell_bill_detail_items_table_td\">总金额</td> <td class=\"sell_bill_detail_items_table_td\">单据日期</td> <td class=\"sell_bill_detail_items_table_td\">制单人</td> <td class=\"sell_bill_detail_items_table_td\">地址</td> <td class=\"sell_bill_detail_items_table_td\">审批人</td> </tr>";
+                document.getElementById("sell_bill_detail_items_table").innerHTML = "<tr class=\"sell_bill_detail_items_table_tr\" ><td class=\"sell_bill_detail_items_table_td\">单据号</td><td class=\"sell_bill_detail_items_table_td\">客户名</td><td class=\"sell_bill_detail_items_table_td\">客户电话</td><td class=\"sell_bill_detail_items_table_td\">总金额</td> <td class=\"sell_bill_detail_items_table_td\">单据日期</td> <td class=\"sell_bill_detail_items_table_td\">制单人</td> <td class=\"sell_bill_detail_items_table_td\">地址</td> <td class=\"sell_bill_detail_items_table_td\">审批人</td> </tr>";
 
                 for(var i=0;i<jsonarray.length;i++){
                     var tr = document.createElement("tr");
                     tr.setAttribute("id","tr_"+i);
                     tr.setAttribute("info",jsonarray[i].PK_SALE_HEAD)
                     tr.setAttribute("ondblclick","detail()")
+
+                    var td0= document.createElement("td");
+                    td0.setAttribute("id","customer_"+i);
+                    td0.innerText = jsonarray[i].PK_SALE_HEAD
+                    tr.appendChild(td0);
 
                     var td1= document.createElement("td");
                     td1.setAttribute("id","customer_"+i);

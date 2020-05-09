@@ -1,0 +1,31 @@
+input{
+    padding: 2px;
+    width: 200px;
+    margin: 2px;
+}
+.purch_bill_head_item{
+    display: inline-block;
+    margin-left: 10px;
+}
+#purch_bill_div_info{
+    height: 15%;
+    width: 80%;
+    padding-left: 200px;
+    margin-top: 10px;
+}
+table{
+    margin-top: 5px;
+    text-align: center;
+}
+
+tr:hover{
+    background-color: #eeeeee;
+}
+td{
+    height: 30px;
+    width: 300px;
+}
+#commit_button{
+    float: right;
+    margin-right: 370px;
+}

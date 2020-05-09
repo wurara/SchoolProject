@@ -35,20 +35,16 @@
             <a href="/mainPage/content/sell/search.jsp">销售单查询</a>
         </div>
         <div class="function_box" id="purch_bill_div" hidden="hidden">
-            <a>采购单新增</a>
-            <a>采购单查询</a>
+            <a href="/mainPage/content/purch/search.jsp">采购单查询</a>
         </div>
         <div class="function_box" id="pay_bill_div" hidden="hidden">
-            <a>付款单新增</a>
-            <a>付款单查询</a>
+            <a href="/mainPage/content/pay/search.jsp">付款单查询</a>
         </div>
         <div class="function_box" id="fahuo_bill_div" hidden="hidden">
-            <a>发货单新增</a>
-            <a>发货单查询</a>
+            <a href="/mainPage/content/fahuo/search.jsp">发货单查询</a>
         </div>
         <div class="function_box" id="earn_bill_div" hidden="hidden">
-            <a>收款单新增</a>
-            <a>收款单查询</a>
+            <a href="/mainPage/content/earn/search.jsp">收款单查询</a>
         </div>
         <div  id="login_right_box">
             <a href="" id="user_center_a"></a>

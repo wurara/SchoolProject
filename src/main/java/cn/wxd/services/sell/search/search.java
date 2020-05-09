@@ -34,6 +34,7 @@ public class search extends HttpServlet {
             if(flag==0){
                 sql.append(" where ");
                 sql.append(" BILL_MAKER='"+json.get("CREATOR")+"'");
+                flag = 1;
             }else {
                 sql.append(" and ");
                 sql.append(" BILL_MAKER='"+json.get("CREATOR")+"'");
@@ -43,6 +44,7 @@ public class search extends HttpServlet {
             if(flag==0){
                 sql.append(" where ");
                 sql.append(" ADDRESS='"+json.get("ADDRESS")+"'");
+                flag = 1;
             }else {
                 sql.append(" and ");
                 sql.append(" ADDRESS='"+json.get("ADDRESS")+"'");
@@ -52,6 +54,7 @@ public class search extends HttpServlet {
             if(flag==0){
                 sql.append(" where ");
                 sql.append(" CUSTOMER_PHONE='"+json.get("CUSTOMER_PHONE")+"'");
+                flag = 1;
             }else {
                 sql.append(" and ");
                 sql.append(" CUSTOMER_PHONE='"+json.get("CUSTOMER_PHONE")+"'");
@@ -61,6 +64,7 @@ public class search extends HttpServlet {
             if(flag==0){
                 sql.append(" where ");
                 sql.append(" PK_SALE_HEAD='"+json.get("BILLID")+"'");
+                flag = 1;
             }else {
                 sql.append(" and ");
                 sql.append(" PK_SALE_HEAD='"+json.get("BILLID")+"'");

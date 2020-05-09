@@ -20,7 +20,7 @@ public class PurchAdd extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         JSONObject json = (JSONObject) JSON.parse(req.getParameter("json"));
-        String pkPurchHead = GlobleUtils.getBillPK("gm","PURCH_BILL_HEAD");
+        String pkPurchHead = GlobleUtils.getBillPK("cg","PURCH_BILL_HEAD");
         StringBuffer sql = new StringBuffer();
         //将采购单表头插入到表头中
         sql.append(" insert into PURCH_BILL_HEAD (PK_PURCH_HEAD,DR,CREATIONTIME,PK_FROM,ROWCOUNT)");
