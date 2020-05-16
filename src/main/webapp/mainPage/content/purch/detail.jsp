@@ -53,6 +53,7 @@
 </body>
 <script>
     var detail_count = 0;
+    var detail_json = "";
 
     var xmlhttp;
     if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -67,14 +68,13 @@
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 var json  = JSON.parse(xmlhttp.responseText);
-
+                detail_json = xmlhttp.responseText;
                 document.getElementById("purch_bill_info_billID").innerText = json.PK_PURCH_HEAD
                 document.getElementById("purch_bill_info_billfrom").innerText = json.PK_FROM
                 document.getElementById("purch_bill_info_creationtime").innerText = json.CREATIONTIME
                 if(json.BILL_CHECKER!=""){
                     document.getElementById("purch_bill_info_check_button").setAttribute("disabled",false);
                 }
-
                 var body = json.body
                 for(var i = 0;i<body.length-1;i++){
                     var tr = document.createElement("tr");

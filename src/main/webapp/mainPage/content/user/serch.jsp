@@ -94,10 +94,10 @@
     else {// code for IE6, IE5
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
+
     //查询有多少部门
     window.onload = function (ev) {
-        document.getElementById("show_body_table").innerHTML = "<tr><td>名称</td><td>性别</td><td>部门</td><td>职位</td><td>电话</td><td>学位</td><td>学校</td><td>生日</td><td>身份证</td><td>血型</td><td>创建人</td><td>创建时间</td></tr>"
-        //ajax提交请求查询密码
+        //ajax提交请求查询部门
         xmlhttp.open("GET", "/dept_select", true);
         xmlhttp.send();
         xmlhttp.onreadystatechange = function () {
@@ -116,6 +116,7 @@
                 }
             }
         }
+        document.getElementById("search_button").click();
     }
 
     //查询部门的职位
@@ -147,7 +148,7 @@
 
 
     //设置查询按钮功能，提交json字符串格式的数据
-    document.getElementById("search_button").onclick = function (ev1) {
+    document.getElementById("search_button").onclick = function (ev) {
         var showBody = document.getElementById("show_body_table");
         showBody.innerHTML = "";
         document.getElementById("show_body_table").innerHTML = "<tr><td>名称</td><td>性别</td><td>部门</td><td>职位</td><td>电话</td><td>学位</td><td>学校</td><td>生日</td><td>身份证</td><td>血型</td><td>创建人</td><td>创建时间</td></tr>"

@@ -21,10 +21,11 @@ public class FaBillAdd extends HttpServlet {
         JSONObject json = (JSONObject) JSON.parse(req.getParameter("json"));
         StringBuffer sql = new StringBuffer();
         String result = "";
-        sql.append(" insert into FaBILL_HEAD (PK_FABILL_HEAD,DR,CREATIONTIME,ADDRESS,PK_FROM,CUSTOMER,CUSTOMER_PHONE,ROWCOUNT)");
+        sql.append(" insert into FaBILL_HEAD (PK_FABILL_HEAD,MONEY,DR,CREATIONTIME,ADDRESS,PK_FROM,CUSTOMER,CUSTOMER_PHONE,ROWCOUNT)");
 
         sql.append(  "values (");
         sql.append(" '"+GlobleUtils.getBillPK("fh","FABILL_HEAD")+"',");
+        sql.append(" '"+json.get("MONEY")+"',");
         sql.append(" '0',");
         sql.append(" '"+new SimpleDateFormat("YYYY-MM-dd").format(new Date())+"',");
         sql.append(" '"+json.get("ADDRESS")+"',");

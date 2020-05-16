@@ -29,7 +29,7 @@ public class PurchAdd extends HttpServlet {
         sql.append(" '" + 0 + "',");
         sql.append(" '" + new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + "',");
         sql.append(" '" + json.get("PK_SALE_HEAD") + "',");
-        sql.append(" '" + GlobleUtils.getTableCount("PURCH_BILL_HEAD") + "'");
+        sql.append(" '" + (Integer.valueOf(GlobleUtils.getTableCount("PURCH_BILL_HEAD"))+1)+ "'");
         sql.append(" )");
         String result = new BaseDAO().executeUpdate(sql.toString());
 

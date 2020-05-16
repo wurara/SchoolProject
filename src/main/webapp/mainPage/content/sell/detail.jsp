@@ -115,7 +115,7 @@
 
                     var td1 = document.createElement("td");
                     td1.setAttribute("id", "count_" + i);
-                    td1.innerText = (sale_bill_json.body[i].PK_SALE_BODY).charAt(17);
+                    td1.innerText = i;
                     tr.appendChild(td1);
 
                     var td2 = document.createElement("td");

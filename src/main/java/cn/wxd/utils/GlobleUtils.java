@@ -74,7 +74,7 @@ public class GlobleUtils {
 
     public static  String getBillPK(String head,String table_name){
         int rowCount = Integer.parseInt(GlobleUtils.getTableCount(table_name))+1;
-        String pkBillHead = head+new SimpleDateFormat("YYYYMMdd").format(new Date())+ ("0000"+(Integer.valueOf(rowCount)+1)).substring(("0000"+(Integer.valueOf(rowCount)+1)).length()-4,("0000"+(Integer.valueOf(rowCount)+1)).length());
+        String pkBillHead = head+new SimpleDateFormat("YYYYMMdd").format(new Date())+ ("0000"+(Integer.valueOf(rowCount))).substring(("0000"+(Integer.valueOf(rowCount))).length()-4,("0000"+(Integer.valueOf(rowCount))).length());
         return pkBillHead;
     }
 }

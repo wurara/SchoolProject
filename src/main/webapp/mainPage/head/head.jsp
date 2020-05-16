@@ -22,7 +22,8 @@
             <a class="manage_left_item" id="user" onmouseover="show_div(1)">人员</a>
             <a class="manage_left_item" id="sell_bill" onmouseover="show_div(2)">销售单</a>
             <a class="manage_left_item" id="purch_bill" onmouseover="show_div(3)">采购单</a>
-            <a class="manage_left_item" id="pay_bill" onmouseover="show_div(4)">付款单</a>
+
+            <%--<a class="manage_left_item" id="pay_bill" onmouseover="show_div(4)">付款单</a>--%>
             <a class="manage_left_item" id="fahuo_bill" onmouseover="show_div(5)">发货单</a>
             <a class="manage_left_item" id="earn_bill" onmouseover="show_div(6)">收款单</a>
         </div>

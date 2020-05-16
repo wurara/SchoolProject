@@ -1,0 +1,60 @@
+ul{
+    background-color: white;
+    border: 1px solid black;
+    width: 200px;
+}
+
+li:hover{
+    background-color: #888888;
+}
+
+li{
+    list-style-type: none;
+}
+
+input{
+    padding: 2px;
+    width: 200px;
+    margin: 2px;
+}
+
+.ui-helper-hidden-accessible {display:none;}
+
+.earn_bill_head_item{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.earn_bill_foot_item{
+    display: inline-block;
+}
+
+#earn_bill_div_info{
+    height: 15%;
+    width: 80%;
+    padding-left: 200px;
+    margin-top: 10px;
+}
+
+table{
+    margin-top: 5px;
+    text-align: center;
+}
+
+tr:hover{
+    background-color: #eeeeee;
+}
+td{
+    height: 30px;
+    width: 300px;
+}
+
+#commit_button{
+    float: right;
+    margin-right: 370px;
+}
+#earn_bill_foot_items{
+    position: absolute;
+    right: 200px;
+    bottom: 100px;
+}
